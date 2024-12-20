@@ -1,0 +1,10 @@
+import type { ILocation } from './ILocation';
+import type { ICurrentDayWeatherData } from './ICurrentDayWeatherData';
+import type { ICondition } from './ICondition';
+import type { IForecastDay } from './IForecastDay';
+export default  {
+    ILocation,
+    ICurrentDayWeatherData,
+    ICondition,
+    IForecastDay
+}

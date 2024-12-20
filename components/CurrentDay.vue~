@@ -1,0 +1,30 @@
+<script lang="ts" setup>
+import { useStore } from "vuex";
+import type { ICurrentDayWeatherData } from "~/services/typing/ICurrentDayWeatherData";
+import type { IForecastDays } from "~/services/typing/IForecastDays";
+
+
+const store = useStore();
+const currentDay: ICurrentDayWeatherData = computed(()=> store.state.weather?.current);
+const forecastDays: IForecastDays[] = computed(()=> store.state.weather?.forecast.forecastday);
+</script>
+
+<template>
+  <div class="current-day">
+    <div class="current-day__container">
+    <div class="current-day__condition">
+      <div class="current-day__condition__text">
+        <h1>{{currentDay?.temp_c}}</h1>
+        <p>{{ forecastDays[0]?.date }}</p>
+      </div>
+      <div class="current-day__condition__image">
+        <img :src="currentDay?.condition.icon" alt="icon">
+      </div>
+    </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+
+</style>

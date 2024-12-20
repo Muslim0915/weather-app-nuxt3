@@ -1,0 +1,12 @@
+//Fonts
+$font-family-default: 'Montserrat', sans-serif;
+
+//Colors
+$primary-color: #4793FF;
+$secondary-color: #DAE9FF;
+$white-color: #fff;
+$black-color: #000;
+$light-black-color: #939CB0;
+
+//Dark-theme colors
+

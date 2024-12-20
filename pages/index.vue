@@ -1,0 +1,21 @@
+<script lang="ts" setup>
+
+import CurrentDaySection from "~/components/CurrentDaySection.vue";
+import ForecastDaysSection from "~/components/ForecastDaysSection.vue";
+
+</script>
+
+<template>
+  <main>
+    <CurrentDaySection />
+    <ForecastDaysSection />
+  </main>
+</template>
+
+<style lang="scss" scoped>
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+</style>

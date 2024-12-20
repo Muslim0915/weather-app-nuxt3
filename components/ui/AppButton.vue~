@@ -1,0 +1,19 @@
+<script lang="ts" setup>
+
+</script>
+
+<template>
+  <button class="button">
+    <slot />
+
+  </button>
+</template>
+
+<style lang="scss" scoped>
+.button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+</style>
